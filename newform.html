@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Chapter 9 Assignment</title>
+
 <style>
 body {
   font-family: Arial, sans-serif;
@@ -10,7 +11,7 @@ body {
 
 form {
   background-color: #EAEAEA;
-  width: 22em;
+  width: 30em;
   padding: 1.5em;
   margin: 0 auto;
 }
@@ -22,78 +23,71 @@ label {
 
 fieldset {
   margin-top: 1em;
-  width: 19em;
+  width: 26em;
 }
 
-input[type="image"] {
-  display: block;
-  margin: 1em auto 0 auto;
+h1 {
+  text-align: center;
 }
 </style>
+
 </head>
 
 <body>
 
-<h1 style="text-align: center;">Chapter 9 Assignment</h1>
+<h1>Chapter 9 Assignment</h1>
 
-<form>
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username">
+<form action="musicform.html" method="get">
 
-  <p>Favorite Day of the Week:</p>
-  <input type="radio" id="monday" name="day" value="Monday">
-  <label for="monday" style="display:inline;">Monday</label><br>
+<label>Username:</label>
+<input type="text">
 
-  <input type="radio" id="tuesday" name="day" value="Tuesday">
-  <label for="tuesday" style="display:inline;">Tuesday</label><br>
+<fieldset>
+<legend>Favorite Day of the Week:</legend>
+<input type="radio" name="day"> Monday<br>
+<input type="radio" name="day"> Tuesday<br>
+<input type="radio" name="day"> Wednesday<br>
+<input type="radio" name="day"> Thursday<br>
+<input type="radio" name="day"> Friday<br>
+<input type="radio" name="day"> Saturday<br>
+<input type="radio" name="day"> Sunday
+</fieldset>
 
-  <input type="radio" id="wednesday" name="day" value="Wednesday">
-  <label for="wednesday" style="display:inline;">Wednesday</label><br>
+<label>Favorite Social Networking Site:</label>
+<select>
+  <option>Instagram</option>
+  <option>Twitter</option>
+  <option>TikTok</option>
+  <option>Snapchat</option>
+</select>
 
-  <input type="radio" id="thursday" name="day" value="Thursday">
-  <label for="thursday" style="display:inline;">Thursday</label><br>
+<fieldset>
+<legend>Shipping Address</legend>
 
-  <input type="radio" id="friday" name="day" value="Friday">
-  <label for="friday" style="display:inline;">Friday</label><br>
+<label>Addressline1:</label>
+<input type="text">
 
-  <input type="radio" id="saturday" name="day" value="Saturday">
-  <label for="saturday" style="display:inline;">Saturday</label><br>
+<label>Addressline2:</label>
+<input type="text">
 
-  <input type="radio" id="sunday" name="day" value="Sunday">
-  <label for="sunday" style="display:inline;">Sunday</label><br>
+<label>City:</label>
+<input type="text">
 
-  <label for="social">Favorite Social Networking Site:</label>
-  <select id="social" name="social">
-    <option>Instagram</option>
-    <option>TikTok</option>
-    <option>Snapchat</option>
-    <option>Facebook</option>
-    <option>X</option>
-  </select>
+<label>State:</label>
+<input type="text">
 
-  <fieldset>
-    <legend>Shipping Address</legend>
+<label>Zip:</label>
+<input type="text">
 
-    <label for="address1">Addressline1:</label>
-    <input type="text" id="address1" name="address1">
+</fieldset>
 
-    <label for="address2">Addressline2:</label>
-    <input type="text" id="address2" name="address2">
+<label>Password:</label>
+<input type="password">
 
-    <label for="city">City:</label>
-    <input type="text" id="city" name="city">
+<br><br>
 
-    <label for="state">State:</label>
-    <input type="text" id="state" name="state">
+<input type="image" src="signup.gif" alt="Sign Up" width="120">
 
-    <label for="zip">Zip:</label>
-    <input type="text" id="zip" name="zip">
-  </fieldset>
-
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password">
-
-  <input type="image" src="signup.gif" alt="Sign Up" width="120" height="60">
 </form>
 
 </body>
