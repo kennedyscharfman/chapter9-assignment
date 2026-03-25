@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Survey - Kennedy Scharfman</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  background-color: #EAEAEA;
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.inline-label {
+  display: inline;
+  margin-left: 5px;
+}
+
+fieldset {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons input {
+  margin-right: 10px;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Music Survey</h1>
+
+<form>
+
+  <label for="myName">Name:</label>
+  <input type="text" name="myName" id="myName">
+
+  <label for="myEmail">E-mail:</label>
+  <input type="email" name="myEmail" id="myEmail">
+
+  <fieldset>
+    <legend>Select Your Favorite Types of Music:</legend>
+
+    <input type="checkbox" name="musicType" id="pop" value="Pop">
+    <label for="pop" class="inline-label">Pop</label><br>
+
+    <input type="checkbox" name="musicType" id="classical" value="Classical">
+    <label for="classical" class="inline-label">Classical</label><br>
+
+    <input type="checkbox" name="musicType" id="rock" value="Rock">
+    <label for="rock" class="inline-label">Rock</label><br>
+
+    <input type="checkbox" name="musicType" id="folk" value="Folk">
+    <label for="folk" class="inline-label">Folk</label><br>
+
+    <input type="checkbox" name="musicType" id="rap" value="Rap">
+    <label for="rap" class="inline-label">Rap</label><br>
+
+    <input type="checkbox" name="musicType" id="other" value="Other">
+    <label for="other" class="inline-label">Other</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Select how often you purchase Music:</legend>
+
+    <input type="radio" name="purchaseFrequency" id="weekly" value="Weekly">
+    <label for="weekly" class="inline-label">Weekly</label><br>
+
+    <input type="radio" name="purchaseFrequency" id="fewcds" value="A few CDs each year">
+    <label for="fewcds" class="inline-label">A few CDs each year</label><br>
+
+    <input type="radio" name="purchaseFrequency" id="monthly" value="Monthly">
+    <label for="monthly" class="inline-label">Monthly</label><br>
+
+    <input type="radio" name="purchaseFrequency" id="never" value="Never purchase">
+    <label for="never" class="inline-label">Never purchase</label>
+  </fieldset>
+
+  <label for="listenLocation">Select the locations you listen to Music:</label>
+  <select name="listenLocation" id="listenLocation" size="3">
+    <option value="At home">At home</option>
+    <option value="In the car">In the car</option>
+    <option value="Anywhere">Anywhere</option>
+    <option value="At the gym">At the gym</option>
+  </select>
+
+  <label for="listenDate">Choose the date you listen to music:</label>
+  <input type="date" name="listenDate" id="listenDate">
+
+  <label for="musicRole">What role does music play in your life?</label>
+  <textarea name="musicRole" id="musicRole" rows="3" cols="60"></textarea>
+
+  <div class="buttons">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </div>
+
+</form>
+
+<p class="footer-info">
+  Kennedy Scharfman<br>
+  kmscharfman1@mail.lipscomb.edu
+</p>
+
+<p class="footer-info">
+  <a href="https://kennedyscharfman.github.io/kennedy-repository/">Back to Home</a>
+</p>
+
+</body>
+</html>
